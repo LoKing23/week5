@@ -1,9 +1,19 @@
+//bootstrap5
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+//helpers
 @import "helpers/mixin";
-@import "base";
 @import "helpers/background";
+@import "base";
+
+//component
+@import "component/cover-photo";
+@import "component/navbar";
+
+//layout
 @import './layout/index.scss';
+
+//utili
 @import "helpers/utili";
