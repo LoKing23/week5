@@ -8584,6 +8584,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -12275,10 +12279,6 @@ fieldset:disabled .btn {
   }
 }
 
-img {
-  vertical-align: middle;
-}
-
 .bg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -12296,6 +12296,21 @@ img {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg);
   height: 40px;
   width: 151px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.cover-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 296px;
 }
 
 .vh-100 {

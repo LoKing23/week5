@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"index.css","sourcesContent":[]}
+{"version":3,"sources":["layout/index.scss","layout/index.css"],"names":[],"mappings":"AAAA;EACE,YAAY;ACCd","file":"index.css","sourcesContent":[".sidebar{\n  width: 296px;\n}",".sidebar {\n  width: 296px;\n}\n"]}
