@@ -1,11 +1,19 @@
+//隱藏文字
 @mixin hidden-text {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
 }
+//垂直置中
 @mixin vertical-center {
   display: inline-block;
   height: auto;
   line-height:1;
 	vertical-align: middle;
+}
+//圖片自適應容器
+@mixin cover-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
