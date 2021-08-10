@@ -4,3 +4,8 @@
 .vertical-center{
   @include vertical-center;
 }
+.after-none::after{
+  @media(min-width: 576px){
+    display: none;
+  }
+}
