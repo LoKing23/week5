@@ -12330,10 +12330,8 @@ img {
   vertical-align: middle;
 }
 
-@media (min-width: 576px) {
-  .after-none::after {
-    display: none;
-  }
+.after-none::after {
+  display: none;
 }
 
 /*# sourceMappingURL=all.css.map */
