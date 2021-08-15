@@ -12785,6 +12785,10 @@ fieldset:disabled .btn {
   width: 151px;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p {
+  margin: 0;
+}
+
 img {
   vertical-align: middle;
 }
@@ -12869,6 +12873,18 @@ img {
 
 .sidebar {
   width: 296px;
+}
+
+.modal-img-box {
+  width: 141px;
+  height: 141px;
+}
+
+.modal-img-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .vh-100 {
