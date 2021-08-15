@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Admin
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/inline/ckeditor.js"></script>
+</head>
+
+<body>
+  <div class="wrap d-flex">
+    <div class="sidebar p-5 bg-light vh-100 d-flex flex-column justify-content-between">
+      <div>
+        <h1 class="bg bg-logo mb-5"><a href="#">ANSWER</a></h1>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="ps-0 nav-link active" aria-current="page" href="#">
+              <span class="vertical-center me-3 material-icons">assessment</span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="ps-0 nav-link" href="#">
+              <span class="vertical-center me-3 material-icons">question_answer</span>
+              Question
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="ps-0 nav-link active" href="index.html">
+              <span class="vertical-center me-3 material-icons">assignment</span>
+              Assignment
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="ps-0 nav-link " href="#" tabindex="-1" aria-disabled="true">
+              <span class="vertical-center me-3 material-icons">video_library</span>
+              Course
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="ps-0 nav-link " href="admin.html" tabindex="-1" aria-disabled="true">
+              <span class="vertical-center me-3 material-icons">supervisor_account</span>
+              Admin
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="ps-0 nav-link " href="#" tabindex="-1" aria-disabled="true">
+              <span class="vertical-center me-3 material-icons">settings</span>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row g-0 align-items-center">
+          <div class="col-4 cover-photo">
+            <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="...">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="fs-6 card-title mb-1">Andy Chen</h5>
+              <p class="card-text fs-7"><small class="text-muted">andy0401@mail.com</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <a class="navbar-brand" href="#">Admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="w-100 d-flex  justify-content-between align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle after-none link-dark" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="material-icons vertical-center text-success">
+                add
+                </span>
+              Add New Admin
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-success" href="#">安安你好</a></li>
+              <li><a class="dropdown-item text-success" href="#">薩提斯</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-success" href="#">上面那條線也太帥</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div>
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#"><span class="material-icons">search</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span
+                  class="material-icons">notifications_active</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID 
+          <span class="material-icons text-success vertical-center">
+          arrow_downward
+          </span></th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">verified</th>
+        <th scope="col"> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="fw-normal">#1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td class="d-flex justify-content-end">
+          <a href='#' alt=''>
+            <span class="material-icons">visibility</span>
+          </a>
+          <a href='#' alt=''>
+            <span class="material-icons ms-5">edit</span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row" class=" fw-normal">#2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row" class="fw-normal">#3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- pagination  -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span class="material-icons ">
+            chevron_left
+          </span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span class="material-icons">
+            chevron_right
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+  </div>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    Boostrap Index
+    Assignment
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/inline/ckeditor.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="ps-0 nav-link active" href="#">
+            <a class="ps-0 nav-link active" href="index.html">
               <span class="vertical-center me-3 material-icons">assignment</span>
               Assignment
             </a>
@@ -44,7 +45,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="ps-0 nav-link " href="#" tabindex="-1" aria-disabled="true">
+            <a class="ps-0 nav-link " href="admin.html" tabindex="-1" aria-disabled="true">
               <span class="vertical-center me-3 material-icons">supervisor_account</span>
               Admin
             </a>
@@ -75,7 +76,6 @@
 <div class="container">
   <!-- navBar  -->
   <nav class="navbar navbar-expand-sm navbar-light">
-
     <a class="navbar-brand" href="#">Assignment</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,11 +98,10 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item text-success" href="#">上面那條線也太帥，原來可以這樣設定</a></li>
+              <li><a class="dropdown-item text-success" href="#">上面那條線也太帥</a></li>
             </ul>
           </li>
         </ul>
-
         <div>
           <ul class="nav">
             <li class="nav-item"><a class="nav-link" href="#"><span class="material-icons">search</span></a></li>
@@ -189,26 +188,52 @@
             <small>Chapter Assignment 2 / HTML&CSS</small>
             <p class="fw-bold mb-0">Please check this file for me, thanks!</p>
           </div>
-          <span class="material-icons">more_vert</span>
+          <a href="#"><span class="material-icons">more_vert</span></a>
         </div>
         <div class="card-body">
-          <div class="inside-card">
+          <div class="inside-card mb-4">
+            <div class="inside-card__user mb-4">
+              <div class="inside-card__photo">
+                <img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="艾蜜莉問">
+              </div>
+              <div>
+                <h5 class="mb-0 fs-6">Emily Wang</h5>
+                <small>10:38 AM (4 hours ago)</small>
+              </div>
+            </div>
+            <div class="inside-card__body">
+              <p class="mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span class="text-inline-code">img</span>  ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> 
+                 What is the gap or extra space below image?</p>
+              <a href="#" class="btn inside-card__btn rounded-1" download="HW-2-David.zip">
+                <span class="material-icons vertical-center rotate-270" >attachment</span> 
+                HW-2-David.zip
+              </a>
+            </div>
+          </div>
+
+          <div class="inside-card inside-card-border-none">
             <div class="inside-card__user mb-4">
               <div class="inside-card__photo">
                 <img src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2134&q=80" alt="艾蜜莉問">
               </div>
               <div>
-                <small>Emily Wang</small>
-                <p class="mb-0">10:38 AM (4 hours ago)</p>
+                <h5 class="mb-0 fs-6">Andy Chen (You)</h5>
+                <small>13:24 AM (1 hours ago)</small>
               </div>
             </div>
-            <div class="inside-card__body">
-              <p class="mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br> 
-                 What is the gap or extra space below image?</p>
-              <a href="assets/images/壯壯的倫.jpg" class="btn inside-card__btn rounded-1" download="去年的壯侖.jpg">
-                <span class="material-icons vertical-center" style="transform:rotate(-90deg)">attachment</span> 
-                帥哥的照片
-              </a>
+            <div class="inside-card__body pb-0">
+              <p>
+                Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+              </p>
+              <p>You can:</p>  
+              <ul class="mb-0">
+                <li>
+                  <p class="mb-0">adjust the <span class="text-inline-code">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-inline-code">middle</span>) or 　</p>
+                </li>
+                <li>
+                  <p class="mb-0">change the <span class="text-inline-code">display</span> so it isn’t inline.</p>
+                </li>
+              </ul>　
             </div>
           </div>
 
@@ -232,15 +257,24 @@
           </li>
         </ul>
         <div>
-          <button class="btn btn-outline-success rounded-1">Mark as read</button>
-          <button class="btn btn-success rounded-1 ms-4">Reply</button>
+          <div class="collapse" id="collapseExample">
+            <div class="editor-area">
+              <div id="editor" style="width: 500px;">
+                type something...
+              </div>
+              <div class="editor-area__btn-area" style="margin-left: auto;">
+                <button class="py2 px-6 btn btn-outline-success rounded-1">Mark as read</button>
+                <button class="py2 px-6 btn btn-outline-success rounded-1">Mark as read</button>
+              </div>
+            </div>
+            
+          </div>
+          <button class="ms-auto py2 px-6 btn btn-outline-success rounded-1">Mark as read</button>
+          <button class="ms-auto py2 px-6 btn btn-success rounded-1 ms-4" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reply</button>
         </div>
       </div>
     </div>
   </div>
-
-
-
 
 
 </div>
