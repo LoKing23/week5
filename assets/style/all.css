@@ -26,6 +26,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-hello: #ced4da;
   --bs-middle: #6c757d;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -3712,6 +3713,47 @@ fieldset:disabled .btn {
   border-color: #212529;
 }
 
+.btn-hello {
+  color: #000;
+  background-color: #ced4da;
+  border-color: #ced4da;
+}
+
+.btn-hello:hover {
+  color: #000;
+  background-color: #d5dae0;
+  border-color: #d3d8de;
+}
+
+.btn-check:focus + .btn-hello, .btn-hello:focus {
+  color: #000;
+  background-color: #d5dae0;
+  border-color: #d3d8de;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(175, 180, 185, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(175, 180, 185, 0.5);
+}
+
+.btn-check:checked + .btn-hello,
+.btn-check:active + .btn-hello, .btn-hello:active, .btn-hello.active,
+.show > .btn-hello.dropdown-toggle {
+  color: #000;
+  background-color: #d8dde1;
+  border-color: #d3d8de;
+}
+
+.btn-check:checked + .btn-hello:focus,
+.btn-check:active + .btn-hello:focus, .btn-hello:active:focus, .btn-hello.active:focus,
+.show > .btn-hello.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(175, 180, 185, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(175, 180, 185, 0.5);
+}
+
+.btn-hello:disabled, .btn-hello.disabled {
+  color: #000;
+  background-color: #ced4da;
+  border-color: #ced4da;
+}
+
 .btn-middle {
   color: #fff;
   background-color: #6c757d;
@@ -4022,6 +4064,40 @@ fieldset:disabled .btn {
 
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #212529;
+  background-color: transparent;
+}
+
+.btn-outline-hello {
+  color: #ced4da;
+  border-color: #ced4da;
+}
+
+.btn-outline-hello:hover {
+  color: #000;
+  background-color: #ced4da;
+  border-color: #ced4da;
+}
+
+.btn-check:focus + .btn-outline-hello, .btn-outline-hello:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.5);
+}
+
+.btn-check:checked + .btn-outline-hello,
+.btn-check:active + .btn-outline-hello, .btn-outline-hello:active, .btn-outline-hello.active, .btn-outline-hello.dropdown-toggle.show {
+  color: #000;
+  background-color: #ced4da;
+  border-color: #ced4da;
+}
+
+.btn-check:checked + .btn-outline-hello:focus,
+.btn-check:active + .btn-outline-hello:focus, .btn-outline-hello:active:focus, .btn-outline-hello.active:focus, .btn-outline-hello.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.5);
+}
+
+.btn-outline-hello:disabled, .btn-outline-hello.disabled {
+  color: #ced4da;
   background-color: transparent;
 }
 
@@ -5728,6 +5804,16 @@ fieldset:disabled .btn {
   color: #101214;
 }
 
+.alert-hello {
+  color: #525557;
+  background-color: #f5f6f8;
+  border-color: #f0f2f4;
+}
+
+.alert-hello .alert-link {
+  color: #424446;
+}
+
 .alert-middle {
   color: #41464b;
   background-color: #e2e3e5;
@@ -6199,6 +6285,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
+}
+
+.list-group-item-hello {
+  color: #525557;
+  background-color: #f5f6f8;
+}
+
+.list-group-item-hello.list-group-item-action:hover, .list-group-item-hello.list-group-item-action:focus {
+  color: #525557;
+  background-color: #dddddf;
+}
+
+.list-group-item-hello.list-group-item-action.active {
+  color: #fff;
+  background-color: #525557;
+  border-color: #525557;
 }
 
 .list-group-item-middle {
@@ -7432,6 +7534,14 @@ fieldset:disabled .btn {
   color: #1a1e21;
 }
 
+.link-hello {
+  color: #ced4da;
+}
+
+.link-hello:hover, .link-hello:focus {
+  color: #d8dde1;
+}
+
 .link-middle {
   color: #6c757d;
 }
@@ -7846,6 +7956,10 @@ fieldset:disabled .btn {
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-hello {
+  border-color: #ced4da !important;
 }
 
 .border-middle {
@@ -8949,6 +9063,10 @@ fieldset:disabled .btn {
   color: #212529 !important;
 }
 
+.text-hello {
+  color: #ced4da !important;
+}
+
 .text-middle {
   color: #6c757d !important;
 }
@@ -9007,6 +9125,10 @@ fieldset:disabled .btn {
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-hello {
+  background-color: #ced4da !important;
 }
 
 .bg-middle {
