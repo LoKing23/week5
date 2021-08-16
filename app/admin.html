@@ -66,7 +66,7 @@ current: OuO
           <a href='#' alt='' data-bs-toggle="modal" data-bs-target="#exampleModal">
             <span class="material-icons">visibility</span>
           </a>
-          <a href='#' alt=''>
+          <a href='#' alt='' data-bs-toggle="modal" data-bs-target="#peaceAndLove">
             <span class="material-icons ms-5">edit</span>
           </a>
         </td>
@@ -248,4 +248,77 @@ current: OuO
 
 
 
+</div>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="peaceAndLove" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-6">
+        <form action="#">
+          <div class="pb-5 border-bottom mb-4">
+            <h5 class="mb-4">Account</h5>
+            <label class="mb-4 w-100">Name <br>
+              <input class="bg-light border-0 w-100 p-3" type="text" value="Emir Wicks">
+            </label>
+            <br>
+            <label class="w-100">Email <br>
+              <input class="bg-light w-100 border-0 w-100 p-3" type="email" value="emir.wicks@mail.com">
+            </label>
+          </div>
+
+          <div class="pb-5 border-bottom mb-4">
+            <h5 class="mb-4">Verification</h5>
+            <div class="d-flex justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <span class="material-icons text-success me-2">check_circle</span>
+                <p>verified</p>
+              </div>
+              <small>2020/4/12</small>
+            </div>
+            <input class="text-hello w-100 border-hello border-1 py-3" type="button" value="Send Verification Mail" disabled>
+          </div>
+
+          <div class="pb-5 border-bottom mb-4">
+            <h5 class="mb-4">Access Level</h5>
+            <select name="level" class="w-100 p-4">
+              <option value="1">Admin</option>
+              <option value="2">Assignment</option>
+              <option value="3">hello Wrold</option>
+            </select>
+          </div>
+
+          <div class="pb-5 border-bottom mb-4">
+            <h5 class="mb-4">Custom Access</h5>
+            <label><input class="me-2" type="checkbox" name="1">Lecture</label> <br>
+            <label><input class="me-2" type="checkbox" name="2">Coupon</label> <br>
+            <label><input class="me-2" type="checkbox" name="3">Message</label> <br>
+            <label><input class="me-2" type="checkbox" name="4">Setting</label> <br>
+            <label><input class="me-2" type="checkbox" name="5">Task Menu</label> 
+          </div>
+
+          <div class="pb-5 mb-4">
+            <h5 class="mb-4">Deactivate Account</h5>
+            <p class="text-danger mb-4">
+              <span class="material-icons me-2 vertical-center">warning</span>
+              This cannot be undone!
+            </p>
+            <button class="btn btn-outline-danger w-100 py-4">Deactivate This Account</button>
+          </div>
+          <input type="submit" id="hello" class="d-none" value="Save change">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success py-2 px-6" data-bs-dismiss="modal">cancel</button>
+        <label for="hello" class="btn btn-success py-2 px-6">update</label>
+      </div>
+        
+    </div>
+  </div>
 </div>
