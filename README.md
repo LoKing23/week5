@@ -1,4 +1,5 @@
 # 後台版型切版 - Bootstrap5
+[github page demo](https://loking23.github.io/week5/)
 練習使用 Bootstrap5 切出後台版型，包括客制化 Bootstrap5 元素、將常用區塊元件化等 <br>
 
 ## 使用方法
